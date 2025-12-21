@@ -32,7 +32,7 @@ public class MusicPlayerPage extends BasePage {
 //            waitABit(2);
 //            clickOn(SpotifyLocator.BUTTON_BACK_PLAYER);
             clickOn(SpotifyLocator.BUTTON_BACK_PLAYER);
-            if (!currentSongPlayed().equals("Hakim Individu")) {
+            if (!currentSongPlayed().equals("Blokir Pikir")) {
                 clickOn(SpotifyLocator.BUTTON_BACK_PLAYER);
             }
             j = j + 1;

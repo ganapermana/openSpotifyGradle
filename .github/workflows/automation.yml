@@ -23,9 +23,6 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
-      - name: Build and Run with Gradle
-        # Ganti 'run' dengan nama task gradle kamu, biasanya 'run' atau 'bootRun'
-        # Jika hanya ingin menjalankan JAR setelah build:
+      - name: Run Cucumber Tests
         run: |
-          ./gradlew build
-          java -jar build/libs/*.jar
+            ./gradlew test --tests "TestRunner.CucumberRunner"

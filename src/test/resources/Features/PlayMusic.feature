@@ -4,7 +4,7 @@ Feature: Play Music
     Given I already open browser
     And user open spotify web
     And user do login into spotify with email "tasaphiraa@gmail.com"
-    And user search for "Hakim Individu" on search bar
+    And user search for "Blokir Pikir" on search bar
     When user click play button
     And user wait for 39 seconds and repeat the song 1001 times
     Then  user close the browser

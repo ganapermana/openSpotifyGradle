@@ -33,3 +33,8 @@ jobs:
         with:
           name: cucumber-report
           path: build/reports/tests/test/
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable

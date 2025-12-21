@@ -23,7 +23,7 @@ public class WebSingleton {
             options.addArguments("--window-size=1920,1080");
             options.addArguments("--disable-dev-shm-usage"); // Mengatasi masalah memori di Linux
             options.addArguments("--disable-gpu");
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(options);
         }
         return driver;
     }

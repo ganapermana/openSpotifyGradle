@@ -23,4 +23,9 @@ dependencies {
 
 test {
     useJUnitPlatform()
+
+    filter {
+        // Ini akan memaksa Gradle mencari file Runner kamu
+        includeTestsMatching "*CucumberRunner"
+    }
 }

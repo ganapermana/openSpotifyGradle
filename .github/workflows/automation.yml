@@ -28,4 +28,4 @@ jobs:
         # Jika hanya ingin menjalankan JAR setelah build:
         run: |
           ./gradlew build
-          java -jar build/libs/nama-aplikasi-kamu.jar
+          java -jar build/libs/*.jar

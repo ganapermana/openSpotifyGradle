@@ -14,7 +14,7 @@ public class WebSingleton {
 
     public static WebDriver getDriver() {
         if (driver == null) {
-            System.setProperty("webdriver.chrome.driver", "/Users/ganapermana/Desktop/chromedriver"); // Sesuaikan path-nya //only for github
+//            System.setProperty("webdriver.chrome.driver", "/Users/ganapermana/Desktop/chromedriver"); // Sesuaikan path-nya //only for github
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--headless=new"); // Mode tanpa tampilan (WAJIB untuk Cloud)
             options.addArguments("--no-sandbox");

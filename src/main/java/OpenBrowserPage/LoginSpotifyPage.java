@@ -18,9 +18,9 @@ public class LoginSpotifyPage extends BasePage {
         waitUntilClickable(SpotifyLocator.LABEL_INPUT_EMAIL);
         typeOn(SpotifyLocator.LABEL_INPUT_EMAIL, email);
         clickOn(SpotifyLocator.BUTTON_COMPLETE_AFTER_EMAIL);
-        waitABit(5);
+        waitABit(25);
         clickOn(SpotifyLocator.BUTTON_LOGIN_WITH_PASSWORD);
-        waitABit(5);
+        waitABit(25);
         typeOn(SpotifyLocator.LABEL_INPUT_PASSWORD_EMAIL, "P@ssw0rd*1");
         clickOn(SpotifyLocator.BUTTON_LOGIN);
     }

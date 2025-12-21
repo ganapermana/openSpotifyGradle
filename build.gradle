@@ -18,11 +18,15 @@ dependencies {
     testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.20.1'
 //    testImplementation 'io.cucumber:cucumber-java:7.20.1'
 //    testImplementation 'io.cucumber:cucumber-spring:7.20.1'
+    testImplementation 'io.cucumber:cucumber-java:7.14.0'
+    testImplementation 'io.cucumber:cucumber-junit:7.14.0'
+    testImplementation 'junit:junit:4.13.2'
 
+    implementation 'org.seleniumhq.selenium:selenium-java:4.15.0'
 }
 
 test {
-    useJUnitPlatform()
+    useJUnit()
 
     filter {
         // Ini akan memaksa Gradle mencari file Runner kamu

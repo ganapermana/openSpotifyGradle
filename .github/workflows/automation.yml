@@ -25,4 +25,4 @@ jobs:
 
       - name: Run Cucumber Tests
         run: |
-            ./gradlew test --tests "*.CucumberRunner"
+            ./gradlew test

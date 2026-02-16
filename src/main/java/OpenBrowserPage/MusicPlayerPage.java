@@ -3,6 +3,7 @@ package OpenBrowserPage;
 import Base.BasePage;
 import Base.WebSingleton;
 import Locators.SpotifyLocator;
+import org.openqa.selenium.Keys;
 
 public class MusicPlayerPage extends BasePage {
     public MusicPlayerPage() {
@@ -11,7 +12,7 @@ public class MusicPlayerPage extends BasePage {
 
     public void searchSongName(String songName) {
         waitUntilClickable(SpotifyLocator.LABEL_SEARCH_SONG);
-        typeOn(SpotifyLocator.LABEL_SEARCH_SONG, songName);
+        typeOn(SpotifyLocator.LABEL_SEARCH_SONG, songName + Keys.ENTER);
     }
 
     public void playTopSearchSong() {
@@ -65,6 +66,7 @@ public class MusicPlayerPage extends BasePage {
             clickOn(SpotifyLocator.BUTTON_NEXT_PLAYER);
             waitABit(2);
             clickOn(SpotifyLocator.BUTTON_BACK_PLAYER);
+            waitABit(2);
             if (!currentSongPlayed().equals("Blokir Pikir")) {
                 clickOn(SpotifyLocator.BUTTON_BACK_PLAYER);
             }
